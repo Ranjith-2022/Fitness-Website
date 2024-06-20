@@ -1,0 +1,17 @@
+<main id="main-order-confirmation">
+<div id="confirmation-container">
+    <h2>Order Confirmed!</h2>
+    <p>Your order confirmation number for further communication : {{confirmation_id}}</p>
+    <p>You have signed up for :</p>
+
+    {{#each enrolledClasses}}
+        {{#if class_name}}
+         <p>{{class_name}}</p>
+         {{else}}
+         <p>MEMBERSHIP</p>
+         {{/if}}
+    {{/each}}
+
+    <button><a href="/">Go to Home</a></button>
+</div>
+</main>
