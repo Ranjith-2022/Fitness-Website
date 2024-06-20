@@ -1,0 +1,24 @@
+<main id="main-classes">
+<h1>Our Classes</h1>
+<p>Let us help you find a class that meets your fitness goals.</p>
+<input type="hidden" id="loginStatus" value="{{login}}">
+<div>
+    {{#each classes}}
+        <div id="class-card">
+            <div id="class-card-photo">
+                <img src="{{photo}}"/>
+            </div>
+            <div id="class-card-contents">
+                <input type="hidden" id="class_name_{{_id}}" value="{{class_name}}">
+                <input type="hidden" id="class_instructor_{{_id}}" value="{{instructor_name}}">
+                <input type="hidden" id="class_length_{{_id}}" value="{{class_length}}">
+                
+                <h2><div id="class_name">{{class_name}} </div> WITH <div id="instructor_name"> {{instructor_name}}</div></h2>
+                <p>{{class_length}} MIN</p>
+                <button onclick="bookNow('{{_id}}')" id="{{_id}}" disabled:false>Book Now</button>
+                <p id="inCart_{{_id}}" class="inCart"></p>  
+            </div>
+        </div>
+    {{/each}}
+</div>
+</main>

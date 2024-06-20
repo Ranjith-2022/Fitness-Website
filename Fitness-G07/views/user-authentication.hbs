@@ -1,0 +1,18 @@
+<main id="main-user-authentication">
+    <div id="form_container">
+        <h1>LOGIN OR SIGNUP</h1>
+        <form method="POST" action="/login" id="login_form">
+            <input type="email" id="email" name="user_Email" placeholder="Enter email address" required/>
+            <br>
+            <input type="password" id="password" name="user_Password" placeholder="Enter password" required/>
+            <br>
+            <div id="form_buttons">
+            <button type="submit" id="login_button" name="submit_button" value="login">LOGIN</button>
+            <button type="submit" id="create_account_button"  name="submit_button" value="create">CREATE ACCOUNT</button>
+            </div>
+        </form>
+        {{#if errMsg}}
+        <p id="login_form-result">{{errMsg}}</p>
+        {{/if}}
+    </div>
+</main>

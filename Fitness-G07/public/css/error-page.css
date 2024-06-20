@@ -1,0 +1,15 @@
+#main-error-page {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#main-error-page h1 {
+    margin-bottom: 30px;
+    font-size: 70px;
+}
